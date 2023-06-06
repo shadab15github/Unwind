@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>UNWIND</title>
+
+<!--=================================================================================
+                                  Internal Links
+==================================================================================-->
+  <link rel="icon" href="../image/logo2.png">
+  <link rel="stylesheet" href="../css/style.css" />
+
+<!--=================================================================================
+                                  External Links
+==================================================================================-->
+  <link rel="stylesheet" text="text/CSS" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" text="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+
+<!--=================================================================================
+                              Back-to-Top Button CSS
+==================================================================================-->
+<style>
+  html {
+    scroll-behavior: smooth;
+
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .back-top-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: #7ddaba;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    z-index: 100;
+  }
+
+  .back-top-wrap:hover {
+    background-color: #479177;
+  }
+
+  .back-top-wrap:hover .fa-solid {
+    color: #0f5c5b;
+  }
+
+  .fa-solid {
+    color: #0f5c5b;
+    transition: 0.3s ease-in-out;
+  }
+</style>
+
+<!--=================================================================================
+                                  Loading Function
+==================================================================================-->
+<body onload="myFunction()">
+  <div class="loading-wrapper">
+    <img src="../image/logo2.png" id="loading" />
+  </div>
+  
+<!--=================================================================================
+                                Back-to-Top Function
+==================================================================================-->
+ 
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fa-solid fa-arrow-up-long"></i>
+  </div>
+
+<!--=================================================================================
+                                      Nav Bar
+==================================================================================-->
+  <header>
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#"> <img src="../image/logo1.png" alt="Logo" class="logo" /></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="contact.html">CONTACT US </a></li>
+        </ul>
+      </div>
+
+<!--=================================================================================
+                                  Hamburger Menu
+==================================================================================-->
+      <div class="hamburger" id="ham">
+        <i class="cancel fa-solid fa-xmark"></i>
+        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+
+<!--=================================================================================
+                                      Menu Bar
+==================================================================================-->
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES </a></li>
+        <li><a href="contact.html">CONTACT US </a></li>
+      </ul>
+    </div>
+
+<!--=================================================================================
+                            Landing Page Section(content)
+==================================================================================-->
+    <div class="content">
+      <h1>Welcome to UNWIND</h1>
+      <div class="container">
+        <h3><span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span></h3>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["Find your ultimate calm, and let the perfect day begin. Unwind's the way to go"],
+          typeSpeed: 50,
+          backspeed: 50,
+          loop: true
+        })
+      </script>
+      <a href="#services" class="rainbow-button" alt="Explore"></a>
+    </div>
+  </header>
+
+<!--=================================================================================
+                                    About Section
+==================================================================================-->
+  <section id="about" class="about">
+    <h1 data-aos="flip-right">About Us</h1>
+    <div class="max-width">
+      <div data-aos="zoom-in" class="photo"><img src="../image/about1.jpg" alt="" height="330px" width="330px"></div>
+      <div class="about-content">
+        <p data-aos="fade-left" class="text-1">By creating <span>Unwind</span>, we're aiming to make stress relief accessible and attainable for everyone. So offering a range of <span>resources</span>, can greatly benefit our users.</p>
+        <p data-aos="fade-left" class="text-3">The aim of <span>Unwind</span> is to offer individuals a comprehensive resource to <span>manage and reduce stress</span> in their lives.</p>
+      </div>
+    </div>
+    <h3><span style="color: #7ddaba;">DISCOVER THE DEVELOPER</span></h3>
+
+    <div class="box">
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="../image/shadab.jpeg" alt="Shadab Khan" loading="lazy">
+        <h5>Shadab Khan</h5>
+        <div class="pra">
+          <p>Web Developer</p>
+          <a href="https://github.com/shadab15github"><button>Let's Connect</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--=================================================================================
+                                    Service Section
+==================================================================================-->
+  <section id="services">
+    <h1>Our Services</h1>
+    <div data-aos="zoom-in" data-aos-duration="800" class="container">
+      <div class="responsive yoga">
+        <div class="round-image">
+          <img src="../image/yoga.jpg" alt="yoga" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Yoga Dhyana</h2>
+          <p>
+            Yoga dhyana invites you to still the mind, awaken inner wisdom, and experience the profound depths of meditative bliss.
+          </p>
+          <a href="YogaDhyana.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive laugh">
+        <div class="round-image">
+          <img src="../image/laugh.jpg" alt="laughing" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Laughter Wellness</h2>
+          <p>
+            Laughter wellness brings the healing power of laughter to uplift spirits, reduce stress, and foster a joyful state of well-being.
+          </p>
+          <a href="laughTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive talk">
+        <div class="round-image">
+          <img src="../image/talking.jpg" alt="talking" />
+        </div>
+        <div class="description">
+          <h2>Talk Therapy</h2>
+          <p>
+            Talk therapy offers a safe space to share, heal, and grow, fostering positive change through the power of conversation.
+          </p>
+          <a href="talkThrerapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive audio">
+        <div class="round-image">
+          <img src="../image/sound.jpg" loading="lazy" alt="sound" />
+        </div>
+        <div class="description">
+          <h2>Sound Meditation</h2>
+          <p>
+            Embark on a transformative journey of inner peace and harmony with the healing power of sound meditation.
+          </p>
+          <a href="sound.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive child">
+        <div class="round-image">
+          <img src="../image/child.jpg" alt="child" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Child Counseling</h2>
+          <p>
+            Child counseling creates a transformative journey of healing and growth, unlocking the inner resilience of young hearts
+          </p>
+          <a href="child.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive doctor">
+        <div class="round-image">
+          <img src="../image/doctor.jpg" alt="doctor" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Doctor Consultation</h2>
+          <p>
+            Consulting a doctor provides trusted medical expertise for accurate diagnoses, treatment recommendations.
+          </p>
+          <a href="https://www.practo.com/counselling-psychology" target="_blank">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+<!--=================================================================================
+                          Repeatedly Asked Queries Section
+==================================================================================-->
+  <section class="faq">
+    <div class="faq_heading">
+      <h1>Repeatedly Asked Queries</h1>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item">
+
+        <button class="accordion__btn">
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is the intention behind creating Unwind?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>By creating Unwind, with the intention of helping individuals manage and reduce stress in their lives. The website's primary goal is to provide a stress-free environment and offer various resources aimed at promoting relaxation and well-being.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What services do we offer?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>We provide a range of services such as:
+            <br>
+            1. Yoga Dhyana
+            <br>
+            2. Laughter Wellness
+            <br>
+            3. Talk Therapy
+            <br>
+            4. Sound Meditation
+            <br>
+            5. Child Counseling
+            <br>
+            6. Doctor Consultation
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>How can you Contact Us?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p> You can contact us via <a class="email" href="mailto:sukoon665@gmail.com">shadab150102@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Yoga Dhyana?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Yoga Dhyana is a practice that combines the principles of yoga and meditation. "Yoga" refers to a holistic discipline that encompasses physical postures (asanas), breathing techniques (pranayama), and meditation practices to promote physical, mental, and spiritual well-being. </p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Laughter Wellness?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Laughter Wellness is a practice that focuses on promoting laughter as a means to enhance well-being and overall health. It combines elements of laughter exercises, deep breathing techniques, and mindfulness to create a holistic approach to laughter. Laughter Wellness aims to harness the physical, mental, and emotional benefits of laughter in a structured and intentional way.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Talk Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Talk therapy, also known as psychotherapy or counseling, is a form of therapeutic treatment that involves verbal communication between a trained therapist and an individual or group of individuals. It is a collaborative process aimed at addressing psychological and emotional challenges, improving mental health, and facilitating personal growth.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Sound Meditation?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Sound meditation is a practice that involves using various sounds and vibrations as a focal point for meditation. It is a form of meditation that utilizes auditory stimuli to guide individuals into a state of deep relaxation, inner awareness, and heightened consciousness.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Child Counseling?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Child counseling, also known as child therapy or child psychotherapy, is a specialized form of therapy that focuses on providing mental health support and guidance to children and adolescents. It is a collaborative process between a trained therapist and a child, aimed at addressing emotional, behavioral, or social difficulties and promoting healthy development.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Doctor Consultation?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Doctor consultation refers to a professional medical service where individuals seek the expertise and guidance of a qualified medical doctor or physician. It involves an appointment or meeting with a doctor to discuss one's health concerns, receive a diagnosis, obtain medical advice, and explore treatment options.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+<!--=================================================================================
+                                    Footer Section
+==================================================================================-->
+  <footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+      <div class="col">
+        <!--logo insert-->
+        <img src="../image/logo2.png" alt="logo" class="footlogo" />
+        <div class="footercontent">
+          <h2 class="footerheading">UNWIND</h2>
+        </div>
+      </div>
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>West Bengal,India</p>
+          <p class="email-id"><a href="mailto:shadab150102@gmail.com">shadab150102@gmail.com</a></p>
+        </div>
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li>
+              <a href="#services">Our Services</a>
+            </li>
+          </ul>
+        </div>
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>
+            SERVICES
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li>
+              <a href="YogaDhyana.html">Yoga Dhyana</a>
+            </li>
+            <li>
+              <a href="laughTherapy.html">Laughter Wellness</a>
+            </li>
+            <li>
+              <a href="talkThrerapy.html">Talk Therapy</a>
+            </li>
+            <li>
+              <a href="sound.html">Sound Meditation</a>
+            </li>
+            <li>
+              <a href="child.html">Child Counseling</a>
+            </li>
+            <li>
+              <a href="https://www.practo.com/counselling-psychology">Doctor Consultation</a>
+            </li>
+          </ul>
+        </div>
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>
+            CONTACTS
+            <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-menu">
+            <ul>
+              <a href="https://twitter.com/Shadab15tweet" target="_blank">
+                <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+              </a>
+              <a href="https://github.com/shadab15github" target="_blank">
+                <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
+              </a>
+              <a href="https://www.linkedin.com/in/shadab-khan-119521277/" target="_blank">
+                <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+    let preloader = document.querySelector(".loading-wrapper");
+    function myFunction() {
+      preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
+
+    window.onscroll = function () {
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./serviceworker.js')
+          .then((reg) => console.log('Success', reg.scope))
+          .catch((err) => console.log('Error', err))
+      })
+    }
+  </script>
+  <script type="text/javascript" src="../js/scrollsmooth.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unwind | Child Counseling</title>
+
+<!--=================================================================================
+                                  Internal Links
+==================================================================================-->
+    <link rel="icon" href="../image/logo-child-btm.png">
+    <link rel="stylesheet" href="../css/child.css" />
+
+<!--=================================================================================
+                                  External Links
+==================================================================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" text="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet"/>
+      
+  </head>
+
+<!--=================================================================================
+                                  Loading Function
+==================================================================================-->
+  <body onload="myFunction()">
+    <div class="loading-wrapper">
+      <img src="../image/logo-child-btm.png" id="loading" />
+    </div>
+
+<!--=================================================================================
+                                Back-to-Top Function
+==================================================================================-->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  
+<!--=================================================================================
+                                      Nav Bar
+==================================================================================-->
+  <nav>
+      <a href="index.html"
+        ><img class="audio-logo" src="../image/logo-child.png" alt="Logo"
+      /></a>
+
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about" class=".smooth-scroll">ABOUT</a></li>
+          <li><a href="#images" class=".smooth-scroll">IMAGES </a></li>
+          <li><a href="#videos" class=".smooth-scroll">VIDEOS </a></li>
+        </ul>
+      </div>
+
+<!--=================================================================================
+                                  Hamburger Menu
+==================================================================================-->
+      <div class="hamburger" id="ham">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
+      </div>
+    </nav>
+
+<!--=================================================================================
+                                      Menu Bar
+==================================================================================-->
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">HOME</a></li>
+        <li><a class="close" href="#about">ABOUT</a></li>
+        <li><a class="close" href="#images">IMAGES </a></li>
+        <li><a class="close" href="#videos">VIDEOS </a></li>
+      </ul>
+    </div>
+
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">HOME</a></li>
+        <li><a class="close" href="#about">ABOUT</a></li>
+        <li><a class="close" href="#images">IMAGES </a></li>
+        <li><a class="close" href="#videos">VIDEOS </a></li>
+      </ul>
+    </div>
+
+<!--=================================================================================
+                            Landing Page Section(content)
+==================================================================================-->
+    <header>
+      <div class="center"> 
+        <h1 id="title">Nurturing Hearts,<br><span class="heading-span">Empowering Minds!</span></h1>
+    </header>
+
+<!--=================================================================================
+                                    About Section
+==================================================================================-->
+    <section id="about" class="about">
+      <h1 class="section-headings">ABOUT</h1>
+      <div class="bfit">
+        <img src="../image/about-child.jpg"
+            width="700" height="600">
+        <div class="btext">
+            <div class="baby-text">
+                <div class="baby-text"><h3>Baby smiles illuminate our world with innocence, spreading contagious joy and reminding us of life's simple wonders. Their laughter echoes with purity, filling hearts with love and hope, creating a bond that transcends words. In their smiles, we find endless happiness and a glimpse of heaven.</h3></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+<!--=================================================================================
+                                    Images Section
+==================================================================================-->
+    </section>
+    <hr/>
+    <section id="images">
+      <h1 class="section-headings">IMAGES</h1>
+      <div class="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child"><img class="child-img" src="../image/slider-1.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../image/slider-2.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../image/slider-3.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../image/slider-4.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../image/slider-5.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../image/slider-6.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../image/slider-7.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../image/slider-8.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="../image/slider-9.jpg" alt="image"></div>
+            </div>
+        </div>
+        <div>
+            <button class="icon-right" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+      <br>
+    </section>
+    <hr/>
+
+<!--=================================================================================
+                                    Videos Section
+==================================================================================-->
+  <section id="videos">
+    <h1 class="section-headings">VIDEOS</h1>
+    <div class="collection">
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q-Eg4kIhWRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zs21cKJs87E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1YBheuHma8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L49VXZwfup8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gB12TV38QBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GZECezeVg08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+<!--=================================================================================
+                                    Footer Section
+==================================================================================-->
+<footer>
+  <div class="footer-container">
+    <!--logo and info column-->
+    <div class="col">
+      <!--logo insert-->
+      <img src="../image/logo-child-btm.png" alt="logo" class="footlogo" />
+      <div class="footercontent">
+        <h2 class="footerheading">UNWIND</h2>
+      </div>
+    </div>
+
+    <!--ADDRESS COLUMN-->
+
+    <div class="footer-side-col">
+      <div class="col">
+        <h3>
+          ADDRESS
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>West Bengal,India</p>
+        <p class="email-id"><a href="mailto:shadab150102@gmail.com">shadab150102@gmail.com</a></p>
+      </div>
+      <!--HOME COLUMN-->
+      <div class="col">
+        <h3>HOME</h3>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li>
+            <a href="index.html#services">Our Services</a>
+          </li>
+        </ul>
+      </div>
+      <!--OUR SERVICES COLUMN-->
+      <div class="col">
+        <h3>
+          SERVICES
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul>
+          <li>
+            <a href="YogaDhyana.html">Yoga Dhyana</a>
+          </li>
+          <li>
+            <a href="laughTherapy.html">Laughter Wellness</a>
+          </li>
+          <li>
+            <a href="talkThrerapy.html">Talk Therapy</a>
+          </li>
+          <li>
+            <a href="sound.html">Sound Meditation</a>
+          </li>
+          <li>
+            <a href="#">Child Counseling</a>
+          </li>
+          <li>
+            <a href="https://www.practo.com/counselling-psychology">Doctor Consultation</a>
+          </li>
+        </ul>
+      </div>
+      <!--CONTACTS COLUMN-->
+      <div class="col">
+        <h3>
+          CONTACTS
+          <div class="underline"><span></span></div>
+        </h3>
+        <div class="social-menu">
+          <ul>
+            <a href="https://twitter.com/Shadab15tweet" target="_blank">
+              <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+            </a>
+            <a href="https://github.com/shadab15github" target="_blank">
+              <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
+            </a>
+            <a href="https://www.linkedin.com/in/shadab-khan-119521277/" target="_blank">
+              <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<script>
+  let preloader = document.querySelector(".loading-wrapper");
+  function myFunction() {
+    preloader.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+  let navbar = document.querySelector("#nav");
+  let navmenu = document.querySelector("#navmenu");
+
+  window.onscroll = function () {
+    if (window.pageYOffset >= navmenu.offsetTop) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  };
+
+  window.onscroll = () => {
+    if (window.scrollY > 100) {
+      navbar.classList.add('nav-active');
+    } else {
+      navbar.classList.remove('nav-active');
+    }
+  };
+</script>
+
+<script>
+  const backTopElement = document.getElementById("back-top-div");
+     const minScolledAmountToBackTop = 800;
+
+     window.addEventListener("scroll", () => {
+       if (window.scrollY < minScolledAmountToBackTop) {
+         backTopElement.classList.add("hidden");
+       } else {
+         backTopElement.classList.remove("hidden");
+       }
+     });
+
+     const backTop = () => {
+       window.scrollTo(0, 0);
+     };
+
+     backTopElement.addEventListener("click", backTop);
+     ham.addEventListener("click", toggleMenu);
+ </script>
+  <script type="text/javascript" src="../js/scrollsmooth.js"></script>
+
+  <script src="../js/child.js"></script>
+  </body>
+</html>
